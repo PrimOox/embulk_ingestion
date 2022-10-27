@@ -1,0 +1,16 @@
+in:
+  type: postgresql
+  host: 0.0.0.0
+  port: 5435
+  user: user_one
+  password: password_one
+  database: northwind
+  table: products
+out:
+  type: file
+  path_prefix: $DL_PATH
+  file_ext: csv
+  formatter:
+    type: csv
+    delimiter: ","
+    charset: UTF-8

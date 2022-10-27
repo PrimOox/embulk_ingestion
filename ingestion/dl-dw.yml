@@ -1,0 +1,18 @@
+in:
+  type: file
+  path_prefix: $DL_PATH
+  file_ext: csv
+  parser:
+    type: csv
+    delimiter: ","
+    charset: UTF-8
+out:
+  type: postgresql
+  host: 0.0.0.0
+  port: 5436
+  user: user_one
+  password: password_one
+  database: dw
+  schema: raw
+  table: products
+  mode: replace

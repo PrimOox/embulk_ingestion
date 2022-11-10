@@ -1,0 +1,22 @@
+in:
+  type: file
+  path_prefix: ./database/dl_data
+  file_ext: csv
+  parser:
+    type: csv_guessable
+    schema_file: ./database/dl_data000.00.csv
+    schema_line: 1
+    delimiter: ","
+    charset: UTF-8
+    header_line: true
+out:
+  type: postgresql
+  host: localhost
+  port: 65436
+  user: root
+  password: root
+  database: dw
+  schema: raw
+  table: products
+  mode: replace
+  header_line: true

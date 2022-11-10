@@ -1,15 +1,17 @@
 in:
   type: postgresql
-  host: 0.0.0.0
-  port: 5435
-  user: user_one
-  password: password_one
+  host: localhost
+  port: 5432
+  user: root
+  password: root
   database: northwind
   table: products
+  header_line: true
 out:
   type: file
-  path_prefix: $DL_PATH
+  path_prefix: ./database/dl_data
   file_ext: csv
+  header_line: true
   formatter:
     type: csv
     delimiter: ","

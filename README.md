@@ -46,9 +46,9 @@ A replicação será de um banco fonte **northwind** para um **data-warehouse**,
 
 ### Plugins utilizados
 
-Para realizar a ingestão serão utilizados os seguintes plugins:
-- embulk-input-postgresql [docs](https://github.com/embulk/embulk-input-jdbc/tree/master/embulk-input-postgresql);
-- embulk-output-postgresql [docs](https://github.com/embulk/embulk-output-jdbc/tree/master/embulk-output-postgresql);
+Para realizar a ingestão serão utilizados os seguintes plugins:  
+- [embulk-input-postgresql](https://github.com/embulk/embulk-input-jdbc/tree/master/embulk-input-postgresql);  
+- [embulk-output-postgresql](https://github.com/embulk/embulk-output-jdbc/tree/master/embulk-output-postgresql);  
 
 ## Consultas
 

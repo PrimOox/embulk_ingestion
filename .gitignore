@@ -2,3 +2,4 @@
 database/dl_data/*
 database/dw_data/*
 database/postgres_data/*
+.vscode/*

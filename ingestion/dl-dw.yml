@@ -1,18 +1,20 @@
 in:
   type: file
-  path_prefix: $DL_PATH
+  path_prefix: ./database/dl_data
   file_ext: csv
   parser:
     type: csv
     delimiter: ","
     charset: UTF-8
+    header_line: true
 out:
   type: postgresql
-  host: 0.0.0.0
-  port: 5436
-  user: user_one
-  password: password_one
+  host: localhost
+  port: 65436
+  user: root
+  password: root
   database: dw
   schema: raw
   table: products
   mode: replace
+  header_line: true
